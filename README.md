@@ -45,26 +45,8 @@ pnpm run start
 
 Here’s the folder structure for a Next.js 15 app using the src directory:
 
-expensio-frontend/
-├── src/                
-│   ├── app/            # Application routing and pages (Next.js App Router)
-│   │   ├── layout.tsx  # Root layout component
-│   │   ├── page.tsx    # Main page component
-│   │   └── api/        # API routes for server-side logic
-│   │       └── hello/  # Example API endpoint
-│   │           └── route.ts
-│   ├── components/     # Reusable UI components
-│   ├── hooks/          # Custom React hooks
-│   ├── lib/            # Utility functions and helper libraries
-│   ├── styles/         # Global and module-specific styles
-│   │   └── globals.css # Global styles
-│   ├── middleware.ts   # Middleware for request handling
-│   └── pages/          # Custom pages like _app.tsx and _document.tsx (optional)
-├── public/             # Static assets (images, fonts, etc.)
-├── next.config.js      # Next.js configuration file
-├── package.json        # Project metadata and scripts
-├── pnpm-lock.yaml      # pnpm lock file
-└── README.md           # Project documentation
+![image](https://github.com/user-attachments/assets/98469ee3-171a-4ca9-94ed-3ab3755f2cde)
+
 
 
 Notes
