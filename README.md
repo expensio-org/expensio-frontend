@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Expensio-Frontend
 
-## Getting Started
+## Introduction
 
-First, run the development server:
+This project manages the client-side logic and communicates with the backend to provide a seamless user experience for managing expenses.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Prerequisites
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Before starting, ensure your environment meets the following requirements:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js: v20.15.1  
+- pnpm: Package manager (will be installed during setup)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Follow these steps to set up the project:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the Repository:
+   git clone 'repository url'
+   cd expensio-frontend
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Verify Node Version: Ensure you are using Node.js version 20.15.1:
+node -v
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Install pnpm:
+npm install pnpm -g
+
+Install Dependencies:
+pnpm install
+
+To start the app in development mode:
+pnpm run dev
+Build for Production
+
+To create a production-ready build:
+pnpm run build
+
+To serve the production build locally:
+pnpm run start
+
+Here’s the folder structure for a Next.js 15 app using the src directory:
+
+expensio-frontend/
+├── src/                
+│   ├── app/            # Application routing and pages (Next.js App Router)
+│   │   ├── layout.tsx  # Root layout component
+│   │   ├── page.tsx    # Main page component
+│   │   └── api/        # API routes for server-side logic
+│   │       └── hello/  # Example API endpoint
+│   │           └── route.ts
+│   ├── components/     # Reusable UI components
+│   ├── hooks/          # Custom React hooks
+│   ├── lib/            # Utility functions and helper libraries
+│   ├── styles/         # Global and module-specific styles
+│   │   └── globals.css # Global styles
+│   ├── middleware.ts   # Middleware for request handling
+│   └── pages/          # Custom pages like _app.tsx and _document.tsx (optional)
+├── public/             # Static assets (images, fonts, etc.)
+├── next.config.js      # Next.js configuration file
+├── package.json        # Project metadata and scripts
+├── pnpm-lock.yaml      # pnpm lock file
+└── README.md           # Project documentation
+
+
+Notes
+Ensure your Node.js version matches v20.15.1 to avoid compatibility issues.
+Use pnpm for dependency management to ensure consistent performance.
+
