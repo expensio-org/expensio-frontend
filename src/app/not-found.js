@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Custom404 = () => {
+const NotFound = () => {
     return (
         <div>
-
+            NotFound
         </div>
     )
 }
 
-export default Custom404
+export default NotFound
