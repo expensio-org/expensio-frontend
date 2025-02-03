@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Color Variables */
 :root {
   --primary: #6404E0;
   --secondary: #B369FE;
@@ -13,10 +14,73 @@
   --success: #1B6640;
   --info: #FBFDC7;
   --highlight: #F9FB7D;
+
+  /* Preserve shadcn's theme but prioritize custom colors */
+  --background: var(--background-light);
+  --foreground: 240 10% 3.9%;
+  --card: var(--background-light);
+  --card-foreground: 240 10% 3.9%;
+  --popover: var(--background-light);
+  --popover-foreground: 240 10% 3.9%;
+  --primary-foreground: 0 0% 98%;
+  --secondary-foreground: var(--background-dark);
+  --accent-foreground: var(--background-dark);
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 10% 3.9%;
+}
+
+.dark {
+  --background: var(--background-dark);
+  --foreground: var(--background-light);
+  --card: var(--background-dark);
+  --card-foreground: var(--background-light);
+  --popover: var(--background-dark);
+  --popover-foreground: var(--background-light);
+  --primary: var(--primary);
+  --secondary: var(--secondary);
+  --accent: var(--accent);
+  --muted: var(--neutral-gray);
+  --muted-foreground: 240 3.8% 46.1%;
+  --destructive: var(--warning);
+  --destructive-foreground: var(--background-light);
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    @apply font-sans;
+  }
+}
+
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-  /* color: var(--primary);
-  background: var(--accent); */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+@keyframes scrollUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.scroll-text {
+  animation: scrollUp .8s ease-in infinite;
 }
