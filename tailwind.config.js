@@ -10,51 +10,60 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: 'var(--primary)',
-          foreground: 'var(--primary-foreground)',
+          DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
         },
         secondary: {
-          DEFAULT: 'var(--secondary)',
-          foreground: 'var(--secondary-foreground)',
+          DEFAULT: "var(--secondary)",
+          foreground: "var(--secondary-foreground)",
         },
         accent: {
-          DEFAULT: 'var(--accent)',
-          foreground: 'var(--accent-foreground)',
+          DEFAULT: "var(--accent)",
+          foreground: "var(--accent-foreground)",
         },
-        backgroundLight: 'var(--background-light)',
-        backgroundDark: 'var(--background-dark)',
-        neutralGray: 'var(--neutral-gray)',
-        warning: 'var(--warning)',
-        success: 'var(--success)',
-        info: 'var(--info)',
-        highlight: 'var(--highlight)',
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        backgroundLight: "var(--background-light)",
+        backgroundDark: "var(--background-dark)",
+        neutralGray: "var(--neutral-gray)",
+        warning: "var(--warning)",
+        success: "var(--success)",
+        info: "var(--info)",
+        highlight: "var(--highlight)",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
         card: {
-          DEFAULT: 'var(--card)',
-          foreground: 'var(--card-foreground)',
+          DEFAULT: "var(--card)",
+          foreground: "var(--card-foreground)",
         },
         popover: {
-          DEFAULT: 'var(--popover)',
-          foreground: 'var(--popover-foreground)',
+          DEFAULT: "var(--popover)",
+          foreground: "var(--popover-foreground)",
         },
         muted: {
-          DEFAULT: 'var(--muted)',
-          foreground: 'var(--muted-foreground)',
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
         },
         destructive: {
-          DEFAULT: 'var(--destructive)',
-          foreground: 'var(--destructive-foreground)',
+          DEFAULT: "var(--destructive)",
+          foreground: "var(--destructive-foreground)",
         },
-        border: 'var(--border)',
-        input: 'var(--input)',
-        ring: 'var(--ring)',
+        border: "var(--border)",
+        input: "var(--input)",
+        ring: "var(--ring)",
       },
 
       fontFamily: {
         sans: ['"Helvetica Neue"', "Arial", "sans-serif"],
       },
-
+      keyframes: {
+        scrollUp: {
+          "0%": { transform: "translateY(-40%)" },
+          "52%": { transform: "translateY(5%)" },
+          "100%": { transform: "translateY(30%)" },
+        },
+      },
+      animation: {
+        scrollUp: "scrollUp 3s infinite",
+      },
       // borderRadius: {
       //   lg: 'var(--radius)',
       //   md: 'calc(var(--radius) - 2px)',

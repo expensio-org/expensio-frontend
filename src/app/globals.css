@@ -71,16 +71,3 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-
-@keyframes scrollUp {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(-100%);
-  }
-}
-
-.scroll-text {
-  animation: scrollUp .8s ease-in infinite;
-}
