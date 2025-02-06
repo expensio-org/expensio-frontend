@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import ChargeExpense from "@/components/landingPage/ChargeExpense";
 import HeroSection from "@/components/landingPage/HeroSection";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -15,9 +16,10 @@ import Image from "next/image";
 // app/dashboard/layout.tsx
 // export default function Home({ children }: { children: React.ReactNode }) {
 export default function Home({ children }) {
-  return (
-    <div className="flex min-h-screen ">
+  return (  
+    <div className="flex min-h-screen flex-col ">
       <HeroSection />
+      <ChargeExpense />
     </div>
   );
 }
