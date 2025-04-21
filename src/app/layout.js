@@ -17,7 +17,8 @@ const geistMono = localFont({
 export const metadata = {
   // title: "Expensio – Smart, Simple Expense Tracking.",
   title: "Expensio 🚀",
-  description: "Manage your finances effortlessly with real-time tracking and insights.",
+  description:
+    "Manage your finances effortlessly with real-time tracking and insights.",
 };
 
 export default function RootLayout({ children }) {
@@ -29,16 +30,16 @@ export default function RootLayout({ children }) {
           href="https://fonts.cdnfonts.com/css/helvetica-neue-5"
         />
       </head>
-      {/* <body
+      <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-      </body> */}
-      <body className="min-h-screen bg-gradient-to-r from-[#09001a] to-[#2d008d] max-w-7xl mx-auto">
+      </body>
+      {/* <body className="min-h-screen bg-gradient-to-r from-[#09001a] to-[#2d008d] max-w-7xl mx-auto">
         <Header />
         <main className="">{children}</main>
         <Footer />
-      </body>
+      </body> */}
     </html>
   );
 }
